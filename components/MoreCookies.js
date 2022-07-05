@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import {useCountMutation, useQuery, useScoreboard} from '../hooks'
+import { useScoreboard } from '../hooks'
 const CookieClicker = dynamic(() => import("react-cookie-clicker"), {
   ssr: false
 });

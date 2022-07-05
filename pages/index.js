@@ -1,6 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import MoreCookies from "../components/MoreCookies";
 
 const ClerkFeatures = () => (
   <Link href="/user">
@@ -58,6 +59,7 @@ const Main = () => (
       <div className={styles.card}>
         <SignedIn>
           <ClerkFeatures />
+          <MoreCookies />
         </SignedIn>
         <SignedOut>
           <SignupLink />
